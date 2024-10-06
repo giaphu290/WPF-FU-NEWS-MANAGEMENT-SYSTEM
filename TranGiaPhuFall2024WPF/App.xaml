@@ -1,0 +1,10 @@
+﻿<Application x:Class="TranGiaPhuFall2024WPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:TranGiaPhuFall2024WPF"
+             Startup="OnStartup">
+    
+    <Application.Resources>
+        
+    </Application.Resources>
+</Application>

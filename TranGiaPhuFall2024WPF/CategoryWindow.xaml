@@ -1,0 +1,58 @@
+﻿<Window x:Class="TranGiaPhuFall2024WPF.CategoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TranGiaPhuFall2024WPF"
+        mc:Ignorable="d"
+        Title="CategoryWindow"  Width="710" Height="400"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        WindowStyle="None">
+    <Grid Background="#bffff0">
+        <DockPanel HorizontalAlignment="Center" Margin="10" >
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+
+
+                <Grid Grid.Row="0" VerticalAlignment="Top">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+                        <TextBox x:Name="txtSearch" Width="200" Height="30" Margin="10" TextChanged="txtSearch_TextChanged"  />
+                        <Button x:Name="btnSearch" Width="80" Content="Search" Background="CornflowerBlue" Margin="10" Click="btnSearch_Click"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center"
+HorizontalAlignment="Right">
+                        <Button x:Name="btnInsert" Margin="10" Width="80" Content="Create"
+Click="btnInsert_Click"/>
+                        <Button x:Name="btnUpdate" Margin="10" Width="80" Content="Update"
+Click="btnUpdate_Click"/>
+                        <Button x:Name="btnDelete" Margin="10" Width="80" Content="Delete"
+Click="btnDelete_Click"/>
+                    </StackPanel>
+                </Grid>
+                <ListView SelectionMode="Single" ScrollViewer.CanContentScroll="False" Grid.Row="1" Name="lvCategorys" SelectionChanged="lvCategorys_SelectionChanged">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Category ID" Width="80" DisplayMemberBinding="{Binding Path=CategoryId}" />
+                            <GridViewColumn Header="Category Name" Width="150" DisplayMemberBinding="{Binding Path=CategoryName}"/>
+                            <GridViewColumn Header="Category Description" Width="300" DisplayMemberBinding="{Binding Path=CategoryDesciption}"/>
+                            <GridViewColumn Header="Parent Category ID" Width="120" DisplayMemberBinding="{Binding Path=ParentCategoryId}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                <Button Grid.Row="2" x:Name="btnClose" Margin="10"
+HorizontalAlignment="Right"
+Width="80" Content="Close" Click="btnClose_Click" />
+            </Grid>
+        </DockPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,128 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FPT\\PRN FPT\\PRN221\\TranGiaPhu_SE1706_Fall2024_A01\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7AA7F3F3-D9AF-4E55-B639-D951DFFAF216}|TranGiaPhuFall2024WPF\\TranGiaPhuFall2024WPF.csproj|d:\\fpt\\prn fpt\\prn221\\trangiaphu_se1706_fall2024_a01\\trangiaphufall2024wpf\\popupprofilewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AA7F3F3-D9AF-4E55-B639-D951DFFAF216}|TranGiaPhuFall2024WPF\\TranGiaPhuFall2024WPF.csproj|solutionrelative:trangiaphufall2024wpf\\popupprofilewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AA7F3F3-D9AF-4E55-B639-D951DFFAF216}|TranGiaPhuFall2024WPF\\TranGiaPhuFall2024WPF.csproj|d:\\fpt\\prn fpt\\prn221\\trangiaphu_se1706_fall2024_a01\\trangiaphufall2024wpf\\popupnewsarticle.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AA7F3F3-D9AF-4E55-B639-D951DFFAF216}|TranGiaPhuFall2024WPF\\TranGiaPhuFall2024WPF.csproj|solutionrelative:trangiaphufall2024wpf\\popupnewsarticle.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AA7F3F3-D9AF-4E55-B639-D951DFFAF216}|TranGiaPhuFall2024WPF\\TranGiaPhuFall2024WPF.csproj|d:\\fpt\\prn fpt\\prn221\\trangiaphu_se1706_fall2024_a01\\trangiaphufall2024wpf\\popupnewsarticle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7AA7F3F3-D9AF-4E55-B639-D951DFFAF216}|TranGiaPhuFall2024WPF\\TranGiaPhuFall2024WPF.csproj|solutionrelative:trangiaphufall2024wpf\\popupnewsarticle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7AA7F3F3-D9AF-4E55-B639-D951DFFAF216}|TranGiaPhuFall2024WPF\\TranGiaPhuFall2024WPF.csproj|d:\\fpt\\prn fpt\\prn221\\trangiaphu_se1706_fall2024_a01\\trangiaphufall2024wpf\\popupcategorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7AA7F3F3-D9AF-4E55-B639-D951DFFAF216}|TranGiaPhuFall2024WPF\\TranGiaPhuFall2024WPF.csproj|solutionrelative:trangiaphufall2024wpf\\popupcategorywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8B257AD-4928-4D63-A282-AE65CB22432A}|TranGiaphuFall202WPFRazorPage\\TranGiaphuFall202WPFRazorPage.csproj|d:\\fpt\\prn fpt\\prn221\\trangiaphu_se1706_fall2024_a01\\trangiaphufall202wpfrazorpage\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B257AD-4928-4D63-A282-AE65CB22432A}|TranGiaphuFall202WPFRazorPage\\TranGiaphuFall202WPFRazorPage.csproj|solutionrelative:trangiaphufall202wpfrazorpage\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PopupProfileWindow.xaml.cs",
+              "DocumentMoniker": "D:\\FPT\\PRN FPT\\PRN221\\TranGiaPhu_SE1706_Fall2024_A01\\TranGiaPhuFall2024WPF\\PopupProfileWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TranGiaPhuFall2024WPF\\PopupProfileWindow.xaml.cs",
+              "ToolTip": "D:\\FPT\\PRN FPT\\PRN221\\TranGiaPhu_SE1706_Fall2024_A01\\TranGiaPhuFall2024WPF\\PopupProfileWindow.xaml.cs",
+              "RelativeToolTip": "TranGiaPhuFall2024WPF\\PopupProfileWindow.xaml.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAswF0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T03:45:11.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PopupNewsArticle.xaml",
+              "DocumentMoniker": "D:\\FPT\\PRN FPT\\PRN221\\TranGiaPhu_SE1706_Fall2024_A01\\TranGiaPhuFall2024WPF\\PopupNewsArticle.xaml",
+              "RelativeDocumentMoniker": "TranGiaPhuFall2024WPF\\PopupNewsArticle.xaml",
+              "ToolTip": "D:\\FPT\\PRN FPT\\PRN221\\TranGiaPhu_SE1706_Fall2024_A01\\TranGiaPhuFall2024WPF\\PopupNewsArticle.xaml",
+              "RelativeToolTip": "TranGiaPhuFall2024WPF\\PopupNewsArticle.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-10-05T03:44:48.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PopupNewsArticle.xaml.cs",
+              "DocumentMoniker": "D:\\FPT\\PRN FPT\\PRN221\\TranGiaPhu_SE1706_Fall2024_A01\\TranGiaPhuFall2024WPF\\PopupNewsArticle.xaml.cs",
+              "RelativeDocumentMoniker": "TranGiaPhuFall2024WPF\\PopupNewsArticle.xaml.cs",
+              "ToolTip": "D:\\FPT\\PRN FPT\\PRN221\\TranGiaPhu_SE1706_Fall2024_A01\\TranGiaPhuFall2024WPF\\PopupNewsArticle.xaml.cs",
+              "RelativeToolTip": "TranGiaPhuFall2024WPF\\PopupNewsArticle.xaml.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T04:11:04.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PopupCategoryWindow.xaml.cs",
+              "DocumentMoniker": "D:\\FPT\\PRN FPT\\PRN221\\TranGiaPhu_SE1706_Fall2024_A01\\TranGiaPhuFall2024WPF\\PopupCategoryWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TranGiaPhuFall2024WPF\\PopupCategoryWindow.xaml.cs",
+              "ToolTip": "D:\\FPT\\PRN FPT\\PRN221\\TranGiaPhu_SE1706_Fall2024_A01\\TranGiaPhuFall2024WPF\\PopupCategoryWindow.xaml.cs",
+              "RelativeToolTip": "TranGiaPhuFall2024WPF\\PopupCategoryWindow.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T04:10:58.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\FPT\\PRN FPT\\PRN221\\TranGiaPhu_SE1706_Fall2024_A01\\TranGiaphuFall202WPFRazorPage\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "TranGiaphuFall202WPFRazorPage\\Pages\\Index.cshtml.cs",
+              "ToolTip": "D:\\FPT\\PRN FPT\\PRN221\\TranGiaPhu_SE1706_Fall2024_A01\\TranGiaphuFall202WPFRazorPage\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "TranGiaphuFall202WPFRazorPage\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T04:03:55.831Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 75,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

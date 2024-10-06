@@ -1,0 +1,122 @@
+﻿<Window x:Class="TranGiaPhuFall2024WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TranGiaPhuFall2024WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1080"
+        WindowStyle="None"
+    WindowStartupLocation="CenterScreen" ResizeMode="CanResize" >
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Height="60" VerticalAlignment="Top" Background="#2e333a"  >
+            <TextBlock Text="News Article" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" Foreground="#FFEFEFEF" />
+            <TextBlock Name="tbRole" Text="Role" Width="100" TextAlignment="Center" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="22" Margin="0 0 20 0" Background="#FFB7A791" Padding="5"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Background="#2e333a">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0">
+                    <TextBlock Text="MANAGE" Padding="5 5" FontSize="30" FontWeight="Bold" Background="#FF2D587D"/>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Menu  Background="Transparent">
+                        <Menu.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                </Grid>
+                            </ItemsPanelTemplate>
+                        </Menu.ItemsPanel>
+                        <MenuItem Name="miLogout" Header="Logout"  Grid.Row="0" FontSize="30" Foreground="White" Padding="28 0" Margin="0 20" BorderThickness="1" BorderBrush="#FF615A5A" Click="miLogout_Click"/>
+                        <MenuItem Name="miCategory" Header="Category" Visibility="Hidden"   Grid.Row="1" FontSize="30" Foreground="White" Padding="18 0"  Margin="0,20,0,20" Click="miCategory_Click" BorderThickness="1" BorderBrush="#FF615A5A" HorizontalAlignment="Left" Width="150"/>
+                        <MenuItem Name="miHistory" Header="History" Visibility="Hidden" Grid.Row="2"  FontSize="30" Foreground="White"  Padding="26 0"  Margin="0 20" Click="miHistory_Click" BorderThickness="1" BorderBrush="#FF615A5A"/>
+                        <MenuItem Name="miProfile" Header="Profile" Visibility="Hidden" Grid.Row="3"  FontSize="30" Foreground="White"  Padding="30 0"  Margin="0 20" Click="miProfile_Click" BorderThickness="1" BorderBrush="#FF615A5A"/>
+                        <MenuItem Name="miAccount" Header="Account" Visibility="Hidden" Grid.Row="4"  FontSize="30" Foreground="White" Padding="20 0"  Margin="0 20" Click="miAccount_Click" BorderThickness="1" BorderBrush="#FF615A5A"/>
+                        <MenuItem Name="miExit" Header="Exit" Grid.Row="5"  FontSize="30" Foreground="White" Padding="40 0"  Margin="0 20" Click="miExit_Click" BorderThickness="1" BorderBrush="#FF615A5A"/>
+                    </Menu>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Column="1" Background="White">
+                <Grid Background="#bffff0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="3*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0"   >
+                            <Button Name="btnCreateReport" Height="30" Visibility="Collapsed" Background="#FFF5BECB"  Content="Create a Report" Width="100" VerticalContentAlignment="Center"  Margin="25" VerticalAlignment="Top" HorizontalAlignment="Left" BorderThickness="1" BorderBrush="#E0E0E0" Click="btnCreateReport_Click" FontWeight="Bold"  />
+
+                        </StackPanel>
+                        <StackPanel Grid.Column="1"  Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                            <TextBox x:Name="txtSearch" Width="200" Height="30" Margin="10" TextChanged="txtSearch_TextChanged"  />
+                            <Button x:Name="btnSearch" Width="80" Content="Search" Background="CornflowerBlue" Margin="10" Click="btnSearch_Click"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
+                            <Button Name="btnCreate" Height="30"  Visibility="Collapsed"  Content="Create" Width="100" VerticalContentAlignment="Center" Padding="5" Margin="25" VerticalAlignment="Top" HorizontalAlignment="Right" BorderThickness="1" BorderBrush="Black" Click="btnCreate_Click"  />
+                            <Button Name="btnUpdate" Height="30"  Visibility="Collapsed"  Content="Update" Width="100" VerticalContentAlignment="Center" Padding="5" Margin="25" VerticalAlignment="Top" HorizontalAlignment="Right" BorderThickness="1" BorderBrush="Black" Click="btnUpdate_Click"  />
+                            <Button Name="btnDelete" Height="30"  Visibility="Collapsed" Content="Delete" Width="100" VerticalContentAlignment="Center" Padding="5" Margin="25" VerticalAlignment="Top" HorizontalAlignment="Right" BorderThickness="1" BorderBrush="Black" Click="btnDelete_Click"  />
+
+                        </StackPanel>
+                    </Grid>
+                    <ListView SelectionMode="Single" ScrollViewer.CanContentScroll="False" Grid.Row="1" Name="lvNewArticles" BorderBrush="#cdcdcd" Margin="10,0,10,10" Padding="0" Width="auto" Height="auto" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="NewsArticle ID" Width="100"
+DisplayMemberBinding="{Binding Path=NewsArticleId }"/>
+                                <GridViewColumn Header="News Title" Width="200"
+DisplayMemberBinding="{Binding Path=NewsTitle}"/>
+                                <GridViewColumn Header="Headline" Width="200"
+DisplayMemberBinding="{Binding Path=Headline }"/>
+                                <GridViewColumn Header="CreateDate" Width="150"
+DisplayMemberBinding="{Binding Path=CreatedDate}"/>
+                                <GridViewColumn Header="NewsContent" Width="300">
+                                    <GridViewColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Path=NewsContent}" TextWrapping="Wrap" />
+                                        </DataTemplate>
+                                    </GridViewColumn.CellTemplate>
+                                </GridViewColumn>
+                                <GridViewColumn Header="NewsSource" Width="100"
+DisplayMemberBinding="{Binding Path=NewsSource}"/>
+                                <GridViewColumn Header="Category" Width="100"
+DisplayMemberBinding="{Binding Path=Category.CategoryName}"/>
+                                <GridViewColumn Header="NewsStatus" Width="100"
+DisplayMemberBinding="{Binding Path=NewsStatus}"/>
+                                <GridViewColumn Header="CreateById" Width="100"
+DisplayMemberBinding="{Binding Path=CreatedById}"/>
+                                <GridViewColumn Header="UpdateById" Width="100"
+DisplayMemberBinding="{Binding Path=UpdatedById}"/>
+                                <GridViewColumn Header="ModifiedDate" Width="100"
+DisplayMemberBinding="{Binding Path=ModifiedDate}"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

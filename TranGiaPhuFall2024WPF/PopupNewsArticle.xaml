@@ -1,0 +1,128 @@
+﻿<Window x:Class="TranGiaPhuFall2024WPF.PopupNewsArticle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TranGiaPhuFall2024WPF"
+        mc:Ignorable="d"
+        Title="PopupNewsArticle" Height="750" Width="800"        WindowStartupLocation="CenterScreen"
+     WindowStyle="None"
+     Background="Transparent" 
+     AllowsTransparency="True">
+    <Grid Margin="0,0,0,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Background="Aquamarine" Padding="30" CornerRadius="25 0 0 25">
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock TextWrapping="Wrap" Name="txtHeader"  TextAlignment="Center" FontWeight="SemiBold" FontSize="40" Foreground="#363636"></TextBlock>
+            </StackPanel>
+        </Border>
+        <Border Grid.Column="1" Padding="28" Background="#ffffff" CornerRadius="0 25 25 0" MouseDown="Border_MouseDown" >
+            <StackPanel VerticalAlignment="Stretch">
+                <Grid Name="grdId">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="20*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Text="Id: " HorizontalAlignment="left" FontWeight="Bold"/>
+
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <TextBox  Name="tbNewsArticleId" Text="{Binding CurrentNewsArticle.NewsArticleId, Mode=TwoWay}" Width="50"  HorizontalAlignment="left" IsEnabled="False" BorderThickness="0" />
+
+                    </StackPanel>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Text="News Title" Margin="0 10" VerticalAlignment="Top" HorizontalAlignment="left" FontWeight="Bold"/>
+                        <TextBox Name="tbNewsTitle" Text="{Binding CurrentNewsArticle.NewsTitle, Mode=TwoWay}" Height="30" Width="200"  VerticalAlignment="Top" HorizontalAlignment="left" BorderThickness="1" BorderBrush="Black" />
+                        <TextBlock Text="Headline" Margin="0 10" VerticalAlignment="Top" HorizontalAlignment="left" FontWeight="Bold"/>
+                        <TextBox Name="tbHeadline" Text="{Binding CurrentNewsArticle.Headline, Mode=TwoWay}" Height="30" Width="200"  VerticalAlignment="Top" HorizontalAlignment="left" BorderThickness="1" BorderBrush="Black" />
+
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <TextBlock Text="Available Tags" Margin="0 10" VerticalAlignment="Top" HorizontalAlignment="left" FontWeight="Bold"/>
+
+                        <!-- Wrap ComboBox and Button in a Horizontal StackPanel -->
+                        <StackPanel Margin="10 0 0 0" Orientation="Horizontal">
+                            <ComboBox x:Name="AvailableTagsComboBox"
+                  Height="30"
+                  Width="100"
+                  DisplayMemberPath="TagName"
+                  ItemsSource="{Binding AvailableTags}"
+                  SelectedItem="{Binding SelectedTag}" />
+
+                            <Button Content="Add Tag"
+                Width="60"
+                Margin="10,0,0,0"
+                Click="AddTag_Click" Background="Aquamarine" />
+                        </StackPanel>
+
+                        <TextBlock Text="Added Tags" Margin="0 10" VerticalAlignment="Top" HorizontalAlignment="left" FontWeight="Bold"/>
+                        <ScrollViewer Height="150" VerticalScrollBarVisibility="Auto">
+                            <ItemsControl Margin="10 0 0 0" x:Name="AddedTagsItemsControl" ItemsSource="{Binding AddedTag}">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapPanel />
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" Margin="5">
+                                            <TextBlock Text="{Binding TagName}" Margin="0,0,10,0"/>
+                                            <Button Content="Remove"
+                            Width="50"
+                            Click="RemoveTag_Click" 
+                            DataContext="{Binding}"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </ScrollViewer>
+                    </StackPanel>
+                </Grid>
+
+                <TextBlock  Text="News Content" Margin="0 10"  VerticalAlignment="Top" HorizontalAlignment="left" FontWeight="Bold"/>
+                <TextBox Name="tbNewsContent"   Height="100" Width="350" Text="{Binding CurrentNewsArticle.NewsContent, Mode=TwoWay}"  VerticalAlignment="Top" HorizontalAlignment="left" BorderThickness="1" BorderBrush="Black" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" />
+                <TextBlock Text="News Source" Margin="0 10" VerticalAlignment="Top" HorizontalAlignment="left" FontWeight="Bold"/>
+                <TextBox Name="tbNewsSource" Text="{Binding CurrentNewsArticle.NewsSource, Mode=TwoWay}" Height="30" Width="350"  VerticalAlignment="Top" HorizontalAlignment="left" BorderThickness="1" BorderBrush="Black" />
+
+                <TextBlock Text="Category" Margin="0 10"  VerticalAlignment="Top" HorizontalAlignment="Left" FontWeight="Bold"/>
+                <ComboBox Name="cbbCategory"   Padding="5" ItemsSource="{Binding CategoryList}" DisplayMemberPath="CategoryName" SelectedValuePath="CategoryId" SelectedValue="{Binding CurrentNewsArticle.CategoryId, Mode=TwoWay}" BorderBrush="Black" BorderThickness="1">
+                </ComboBox>
+                <Grid Margin="0 20">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="7*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock  Name="tbActice" Text="Status"   VerticalAlignment="Top" HorizontalAlignment="left" FontWeight="Bold" />
+
+
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <CheckBox  Name="cbIsActice" IsChecked="{Binding Path=CurrentNewsArticle.NewsStatus, Mode=TwoWay}"  Margin="0 2 0 0" BorderBrush="Black" FontWeight="Bold"/>
+
+                    </StackPanel>
+                </Grid>
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="2.2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0"  Content="Save" Width="70"  VerticalContentAlignment="Center" Padding="5" Margin="0 25" VerticalAlignment="Bottom" HorizontalAlignment="Right" BorderThickness="1" BorderBrush="Black" Background="Aquamarine" Click="btnSave_Click" />
+                    <Button Grid.Column="1"  Content="Cancle" Width="70"  VerticalContentAlignment="Center" Padding="5" Margin="25" VerticalAlignment="Bottom" HorizontalAlignment="Right" BorderThickness="1" BorderBrush="Black" Background="Aquamarine" Click="btnCancle_Click" />
+                </Grid>
+
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

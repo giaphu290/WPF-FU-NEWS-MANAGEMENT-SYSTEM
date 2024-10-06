@@ -1,0 +1,62 @@
+﻿<Window x:Class="TranGiaPhuFall2024WPF.ReportNewsArticle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TranGiaPhuFall2024WPF"
+        mc:Ignorable="d"
+        Title="ReportNewsArticle" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FF2E333A">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="240" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="Aquamarine" Grid.Column="0" Margin="10">
+            <TextBlock Text="Start Date" FontWeight="Bold" Margin="0,0,0,5"/>
+            <DatePicker Name="dpStartDate" Width="200" Margin="0,0,0,10"/>
+
+            <TextBlock Text="End Date" FontWeight="Bold" Margin="0,0,0,5"/>
+            <DatePicker Name="dpEndDate" Width="200" Margin="0,0,0,10"/>
+
+            <Button Content="Generate Report"  Width="200" Margin="0,20,0,0"  Click="btnGenerateReport_Click"/>
+            <Button Width="200" Margin="0,20,0,0" Content="Close" Click="btnClose_Click" />
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="0" >
+            <TextBlock Text="Report" Foreground="#FF7EF3F3" TextAlignment="Center" FontWeight="Bold" FontSize="24" Margin="0,0,0,10"/>
+            <ListView SelectionMode="Single" ScrollViewer.CanContentScroll="False" Name="lvNewArticles" BorderBrush="#cdcdcd" Margin="10,0,10,10" Padding="0" Width="540" Height="400" ScrollViewer.VerticalScrollBarVisibility="Visible" >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="NewsArticle ID" Width="100"
+DisplayMemberBinding="{Binding Path=NewsArticleId }"/>
+                        <GridViewColumn Header="News Title" Width="200"
+DisplayMemberBinding="{Binding Path=NewsTitle}"/>
+                        <GridViewColumn Header="Headline" Width="200"
+DisplayMemberBinding="{Binding Path=Headline }"/>
+                        <GridViewColumn Header="CreateDate" Width="150"
+DisplayMemberBinding="{Binding Path=CreatedDate}"/>
+                        <GridViewColumn Header="NewsContent" Width="300">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Path=NewsContent}" TextWrapping="Wrap" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="NewsSource" Width="100"
+DisplayMemberBinding="{Binding Path=NewsSource}"/>
+                        <GridViewColumn Header="Category" Width="100"
+DisplayMemberBinding="{Binding Path=Category.CategoryName}"/>
+                        <GridViewColumn Header="NewsStatus" Width="100"
+DisplayMemberBinding="{Binding Path=NewsStatus}"/>
+                        <GridViewColumn Header="CreateById" Width="100"
+DisplayMemberBinding="{Binding Path=CreatedById}"/>
+                        <GridViewColumn Header="UpdateById" Width="100"
+DisplayMemberBinding="{Binding Path=UpdatedById}"/>
+                        <GridViewColumn Header="ModifiedDate" Width="100"
+DisplayMemberBinding="{Binding Path=ModifiedDate}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+        </StackPanel>
+    </Grid>
+</Window>

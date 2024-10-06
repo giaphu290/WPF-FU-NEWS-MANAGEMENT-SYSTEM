@@ -1,0 +1,17 @@
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\bin\Debug\net8.0\Repositories.deps.json
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\bin\Debug\net8.0\Repositories.dll
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\bin\Debug\net8.0\Repositories.pdb
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\bin\Debug\net8.0\BusinessObjects.dll
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\bin\Debug\net8.0\DataAccessObjects.dll
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\bin\Debug\net8.0\BusinessObjects.pdb
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\bin\Debug\net8.0\DataAccessObjects.pdb
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\obj\Debug\net8.0\Repositories.csproj.AssemblyReference.cache
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\obj\Debug\net8.0\Repositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\obj\Debug\net8.0\Repositories.AssemblyInfoInputs.cache
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\obj\Debug\net8.0\Repositories.AssemblyInfo.cs
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\obj\Debug\net8.0\Repositories.csproj.CoreCompileInputs.cache
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\obj\Debug\net8.0\Reposito.787EC4B2.Up2Date
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\obj\Debug\net8.0\Repositories.dll
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\obj\Debug\net8.0\refint\Repositories.dll
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\obj\Debug\net8.0\Repositories.pdb
+D:\FPT\PRN FPT\PRN221\TranGiaPhu_SE1706_Fall2024_A01\Repository\obj\Debug\net8.0\ref\Repositories.dll
